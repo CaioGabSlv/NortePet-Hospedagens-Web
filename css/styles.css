@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+
+header a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 32px;
+  }
+  
+  /* Seletor de Navegação */
+  header nav a:hover {
+    text-decoration: underline;
+  }
+
+
+#Cadastro{
+    display: flex;
+    padding: 24px 80px 200px 80px;
+    gap: 64px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+  }
+  
