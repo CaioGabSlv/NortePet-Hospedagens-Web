@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/Teladeredefinicao1.css" />
+    <link rel="icon" href="assets/img/NPH_Logo_Web.png" />
+    <title>TeladeRedefinicao</title>
+    <style>
+      .form-control {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.8
+        ); /* Fundo branco com 80% opacidade */
+        border: 1px solid #ccc; /* Borda cinza clara */
+        border-radius: 5px; /* Bordas arredondadas */
+      }
+
+      .form-label {
+        font-weight: bold; /* Fonte em negrito para labels */
+      }
+
+      .btn-bd-primary {
+        background-color: #713600;
+        border-color: #713600;
+        color: #fff;
+      }
+
+      .btn-bd-primary:hover {
+        background-color: #5b2d00;
+        border-color: #5b2d00;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <div class="barra1"></div>
+    <div class="barra2"></div>
+    <div
+      class="barra3 container2 d-flex justify-content-between align-items-center"
+    >
+      <a href="index.html"
+        ><img src="assets/img/NPH_Logo_Web.png" alt="Logo"
+      /></a>
+      <a href="TeladePerfil(usuariocomum).html">
+        <button
+          type="button"
+          class="btn btn-bd-primary"
+          onclick="window.history.back()"
+        >
+          Voltar
+        </button>
+      </a>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="container-fluid conteudo">
+      <section class="container">
+        <div class="row justify-content-center mb-4">
+          <!-- Título com Imagem -->
+          <div class="col-12 text-center">
+            <img
+              src="assets/img/redefinirsenha.png"
+              alt="Redefinir Senha"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <!-- Formulário de redefinição de senha -->
+        <form action="" method="post">
+          <p>Digite sua senha atual e a nova senha para redefini-la.</p>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Digite seu email"
+              name="email"
+            />
+          </div>
+
+          <!-- Senha atual -->
+          <div class="mb-3">
+            <label for="senhaAtual" class="form-label">Senha atual</label>
+            <input
+              type="password"
+              class="form-control"
+              id="senhaAtual"
+              placeholder="Digite sua senha atual"
+              name="senha_atual"
+            />
+          </div>
+
+          <!-- Nova Senha -->
+          <div class="mb-3">
+            <label for="novaSenha" class="form-label">Nova senha</label>
+            <input
+              type="password"
+              class="form-control"
+              id="novaSenha"
+              placeholder="Digite a nova senha"
+              name="nova_senha"
+            />
+          </div>
+
+          <!-- Confirmar Senha -->
+          <div class="mb-4">
+            <label for="confirmarSenha" class="form-label"
+              >Confirmar senha</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="confirmarSenha"
+              placeholder="Confirme a nova senha"
+              name="confirmar_senha"
+            />
+          </div>
+
+          <!-- Botão Confirmar -->
+          <div class="text-center">
+            <a href="Teladeredefinicao2.html">
+              <button type="submit" class="btn btn-bd-primary btn-lg">
+                Confirmar
+              </button>
+            </a>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

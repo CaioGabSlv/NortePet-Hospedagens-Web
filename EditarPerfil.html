@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/NPH_Logo_Web.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/usuariocomum.css" />
+    <link rel="icon" href="assets/img/NPH_Logo_Web.png" />
+    />
+    <style>
+      body {
+        background-color: #d39c697e;
+        margin: 0; /* Remove margens padrão do body */
+        padding-bottom: 30px; /* Adiciona espaço para o rodapé */
+      }
+      .container {
+        background-color: #d08c4d; /* cor marrom */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        min-height: 100vh; /* Mantém a altura mínima da janela de visualização */
+      }
+      label {
+        color: white;
+      }
+      .image-container {
+        text-align: center; /* Centraliza horizontalmente */
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto; /* Centraliza a imagem */
+      }
+      .custom-file-input {
+        display: none; /* Esconde o input padrão */
+      }
+      .custom-file-label {
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        width: auto;
+      }
+      .custom-file-label:hover {
+        background-color: #0056b3;
+      }
+      /* Estilos para o rodapé */
+      footer {
+        width: 1920px;
+        height: 30px;
+        background-color: #904500;
+        color: white;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000; /* Garante que o rodapé esteja acima de outros elementos */
+      }
+    </style>
+    <!-- cabeçalho fundo marrom  degrade-->
+    <div class="barra1"></div>
+    <div class="barra2"></div>
+    <div class="barra3"></div>
+
+    <div class="col-12 col-lg-12  ">
+      <a href="CadastroNP.html">
+      <button type="button" class="btn btn-dark nav-button ">Felipe</button>
+       
+     </div>
+    </a>
+     
+    </a>
+    <div class="col-6 text-start">
+      <nav class="navbar bg-body-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler botao"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+
+              ></button>
+            </div>
+            <div class="offcanvas-body  text-center">
+              <div class="d-grid gap-3">
+            <button class="btn btn-dark nav-button " type="button">
+               Início
+              </button>
+            
+                  
+              
+              <button class="btn btn-dark nav-button" type="button">
+                  Hotéis
+                </button>
+                <button class="btn btn-dark nav-button" type="button">
+                  Contatos
+                </button>
+                <button class="btn btn-dark nav-button" type="button">
+                  Favoritos
+                </button>
+                <a href="CadastroNP.html"> 
+                <button class="btn btn-dark nav-button" type="button">
+                Meu Perfil
+              </a>
+                </button>
+             
+                <button class="btn btn-dark nav-button" type="button">
+                  Ajuda
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+    <title>Editar Perfil</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Conteúdo principal da página -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="campo1">Nome</label>
+            <input type="text" class="form-control" id="campo1" name="campo1" placeholder="Felipe" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="campo2">Sobrenome</label>
+            <input type="text" class="form-control" id="campo2" name="campo2" placeholder="Silva" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="campo3">CPF</label>
+            <input type="text" class="form-control" id="campo3" name="campo3" placeholder="111.222.333-44" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="campo4">Endereço</label>
+            <input type="text" class="form-control" id="campo4" name="campo4" placeholder="Rua ABC, Bairro G" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="campo5">Número do Celular</label>
+            <input type="text" class="form-control" id="campo5" name="campo5" placeholder="(92)99 772-3344"  />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="campo6">E-mail</label>
+            <input type="text" class="form-control" id="campo6" name="campo6" placeholder="felipesilva2350@gmail.com"/>
+          </div>
+        </div>
+      </div>
+      <!-- Terceira fileira com input de arquivo customizado -->
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Coluna vazia para ocupar metade da largura -->
+        </div>
+        <div class="col-md-6">
+          <div class="image-container">
+            <!-- Aqui é onde a imagem selecionada será exibida -->
+            <img
+              id="imagemPerfil"
+              src="assets/img/UserIconImage.png"
+              alt="Imagem de exemplo"
+            />
+            <!-- Input de arquivo customizado -->
+            <label
+              for="fileInput"
+              class="custom-file-label btn-bd-primary btn-lg"
+              style="background-color: #713600; border-color: #713600"
+            >
+              Escolher a imagem de perfil
+            </label>
+            <input
+              type="file"
+              class="custom-file-input"
+              id="fileInput"
+              onchange="handleFileUpload(this.files)"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Botão de Salvar -->
+      <div class="row mt-3 mb-3">
+        <div class="col-12 text-center">
+          <button
+            type="submit"
+            class="btn btn-primary btn-lg"
+            style="
+              width: 273px;
+              height: 41px;
+              background-color: #713600;
+              border-color: #713600;
+              margin: 0 auto; /* Centraliza o botão */
+              display: block; /* Garante que o botão seja um bloco */
+            "
+          >
+            Salvar
+          </button>
+        </div>
+      </div>
+    </div>
+    <header class="container-fluid" >
+    
+          <!-- LOGO MARCA -->
+          <div class="col-6">
+            <img
+              src="assets/img/NPH_Logo_Web.png"
+              alt="logomarca"
+              width="40%"
+            />
+          </div>
+          
+
+    <!-- Rodapé -->
+    <footer></footer>
+
+    <!-- Adicionar link para o Bootstrap JavaScript (opcional, para funcionalidades como dropdowns) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function handleFileUpload(files) {
+        // Verifica se algum arquivo foi selecionado
+        if (files.length > 0) {
+          const reader = new FileReader();
+
+          // Quando o arquivo for carregado, define o src da imagem
+          reader.onload = function (e) {
+            document.getElementById("imagemPerfil").src = e.target.result;
+          };
+
+          // Lê o arquivo como URL data
+          reader.readAsDataURL(files[0]);
+        }
+      }
+    </script>
+  </body>
+</html>

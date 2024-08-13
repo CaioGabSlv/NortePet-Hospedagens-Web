@@ -1,0 +1,387 @@
+<!--
+Esta é a tela de perfil de hotel (Sem conta), onde será disponibilizado diversas informações
+sobre ele e algumas opções, como os botões para acessar a página de avaliações ou entrar em
+contato com o hotel
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/screens/baseScreenStyles.css">
+    <link rel="stylesheet" href="assets/css/screens/hotelProfile.css" />
+    <title>PetHotel - NortePet Hospedagens</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="sticky-top">
+      <div class="container-fluid">
+        <div class="container mw-100">
+          <!-- Barra de navegação -->
+          <nav class="navbar navbar-expand-lg">
+            <!-- Logomarca -->
+            <img
+              class="logo"
+              src="assets/img/NPHLogoWeb.svg"
+              alt="Logomarca"
+            />
+
+            <!-- Offcanvas -->
+            <div
+              class="offcanvas offcanvas-end offcanvas-body"
+              tabindex="-1"
+              id="navbarOffcanvasLg"
+              aria-labelledby="navbarOffcanvasLgLabel"
+            >
+              <!-- Botão fechar o menu offcanvas -->
+              <div class="offcanvas-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- Botões de navegação da navbar e offcanvas -->
+              <div class="d-flex flex-lg-row flex-column align-items-center gap-3">
+                <a type="button" class="btn btn-dark nav-button font-inter" href="hotelProfile.html">
+                  <img src="assets/img/Login.svg" alt="IconLogin">
+                  Entrar
+                </a>
+                <a type="button" class="btn btn-dark nav-button font-inter" href="#">
+                  <img src="assets/img/Hotel.svg" alt="IconHotel">
+                  Hotéis
+                </a>
+                <a type="button" class="btn btn-dark nav-button font-inter" href="#">
+                  <img src="assets/img/Help.svg" alt="IconHelp">
+                  Ajuda
+                </a>
+                <a type="button" class="btn btn-dark nav-button font-inter" href="#">
+                  <img src="assets/img/Return.svg" alt="IconReturn">
+                  Voltar
+                </a>
+              </div>
+              </button>
+            </div>
+            
+            <!-- Botão abrir o menu offcanvas-->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarOffcanvasLg"
+              aria-controls="navbarOffcanvasLg"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+      <div class="container-fluid">
+        <!-- Obs.: row serve para organizar colunas -->
+        <div class="row">
+          <!-- Coluna de espaçamento -->
+          <div class="col-1"></div>
+
+          <!-- Coluna principal -->
+          <div class="col-10 pt-lg-5 pt-4">
+            <div class="row decoration-box py-2">
+              <!-- Nome do Hotel-->
+              <div class="col-lg-6 col-12 text-lg-start text-center d-lg-flex align-items-lg-center">
+                <h1 style="color: white;" class="font-inter-title align-text-bottom mb-0">PetHotel</h1>
+              </div>
+
+              <!-- Estrelas de avaliação geral-->
+              <div class="col-lg-6 col-12 pt-lg-0 pt-1 d-flex align-items-end justify-content-lg-end justify-content-center">
+                <svg class="rating-star star-size1" viewBox="0 0 59 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M29.5 1.61804L35.7599 20.884L35.8722 21.2295H36.2354H56.4929L40.1042 33.1365L39.8104 33.35L39.9226 33.6955L46.1825 52.9615L29.7939 41.0545L29.5 40.8409L29.2061 41.0545L12.8175 52.9615L19.0774 33.6955L19.1896 33.35L18.8958 33.1365L2.50715 21.2295H22.7646H23.1279L23.2401 20.884L29.5 1.61804Z" />
+                </svg>
+                <svg class="rating-star star-size2" viewBox="0 0 59 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M29.5 1.61804L35.7599 20.884L35.8722 21.2295H36.2354H56.4929L40.1042 33.1365L39.8104 33.35L39.9226 33.6955L46.1825 52.9615L29.7939 41.0545L29.5 40.8409L29.2061 41.0545L12.8175 52.9615L19.0774 33.6955L19.1896 33.35L18.8958 33.1365L2.50715 21.2295H22.7646H23.1279L23.2401 20.884L29.5 1.61804Z" />
+                </svg>
+                <svg class="rating-star star-size3" viewBox="0 0 59 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M29.5 1.61804L35.7599 20.884L35.8722 21.2295H36.2354H56.4929L40.1042 33.1365L39.8104 33.35L39.9226 33.6955L46.1825 52.9615L29.7939 41.0545L29.5 40.8409L29.2061 41.0545L12.8175 52.9615L19.0774 33.6955L19.1896 33.35L18.8958 33.1365L2.50715 21.2295H22.7646H23.1279L23.2401 20.884L29.5 1.61804Z" />
+                </svg>
+                <svg class="rating-star star-size4" viewBox="0 0 59 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M29.5 1.61804L35.7599 20.884L35.8722 21.2295H36.2354H56.4929L40.1042 33.1365L39.8104 33.35L39.9226 33.6955L46.1825 52.9615L29.7939 41.0545L29.5 40.8409L29.2061 41.0545L12.8175 52.9615L19.0774 33.6955L19.1896 33.35L18.8958 33.1365L2.50715 21.2295H22.7646H23.1279L23.2401 20.884L29.5 1.61804Z" />
+                </svg>
+                <svg class="rating-star-empty star-size5" viewBox="0 0 59 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M29.5 1.61804L35.7599 20.884L35.8722 21.2295H36.2354H56.4929L40.1042 33.1365L39.8104 33.35L39.9226 33.6955L46.1825 52.9615L29.7939 41.0545L29.5 40.8409L29.2061 41.0545L12.8175 52.9615L19.0774 33.6955L19.1896 33.35L18.8958 33.1365L2.50715 21.2295H22.7646H23.1279L23.2401 20.884L29.5 1.61804Z" />
+                </svg>
+              </div>
+
+              <!-- Número de avaliações-->
+              <p class="font-inter align-text-bottom text-lg-start text-center mb-0 pt-lg-0 pt-2 px-lg-3 px-0">(58 avaliações)</p>
+            </div>
+
+            <!-- Carrossel -->
+            <div class="row">
+              <div class="col-lg-1 col-0"></div>
+              <div class="col-lg-10 col-12">
+                <div class="container-fluid bg-carousel pt-5 pb-5">
+                  <!-- (bata-bs-ride="carousel" faz com que o carousel avançe automaticamente) -->
+                  <!-- (bata-bs-interval define o intervalo do carousel automático) -->
+                  <div
+                    id="carouselExampleCaptions"
+                    class="carousel slide carousel-fade"
+                    data-bs-ride="carousel"
+                    data-bs-interval="5000"
+                  >
+                    <!-- Botões de slide -->
+                    <div class="carousel-indicators">
+                      <!-- Botão 1 -->
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+  
+                      <!-- Botão 2 -->
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+  
+                      <!-- Botão 3 -->
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+  
+                      <!-- Botão 4 -->
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                      ></button>
+  
+                      <!-- Botão 5 -->
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="4"
+                        aria-label="Slide 5"
+                      ></button>
+  
+                      <!-- Botão 6 -->
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide-to="5"
+                        aria-label="Slide 6"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner rounded-3 carousel-frame">
+                      <!-- Slide 1 -->
+                      <div class="carousel-item active">
+                        <img
+                          src="assets/img/HotelImage1.png"
+                          class="d-block w-100 img-fluid"
+                          alt="Imagem 1"
+                        />
+                      </div>
+        
+                      <!-- Slide 2 -->
+                      <div class="carousel-item">
+                        <img
+                          src="assets/img/HotelImage2.png"
+                          class="d-block w-100 img-fluid"
+                          alt="Imagem 2"
+                        />
+                      </div>
+        
+                      <!-- Slide 3 -->
+                      <div class="carousel-item">
+                        <img
+                          src="assets/img/HotelImage3.png"
+                          class="d-block w-100 img-fluid"
+                          alt="Imagem 3"
+                        />
+                      </div>
+  
+                      <!-- Slide 4 -->
+                      <div class="carousel-item">
+                        <img
+                          src="assets/img/HotelImage4.png"
+                          class="d-block w-100 img-fluid"
+                          alt="Imagem 3"
+                        />
+                      </div>
+  
+                      <!-- Slide 5 -->
+                      <div class="carousel-item">
+                        <img
+                          src="assets/img/HotelImage5.png"
+                          class="d-block w-100 img-fluid"
+                          alt="Imagem 3"
+                        />
+                      </div>
+  
+                      <!-- Slide 6 -->
+                      <div class="carousel-item">
+                        <img
+                          src="assets/img/HotelImage6.png"
+                          class="d-block w-100 img-fluid"
+                          alt="Imagem 3"
+                        />
+                      </div>
+                    </div>
+  
+                    <!-- Botão voltar -->
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+  
+                    <!-- Botão continuar -->
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-0 col-1"></div>
+            </div>
+
+            <!-- Informações -->
+            <div class="row">
+              <!-- Descrição -->
+              <div class="col-lg-6 col-12 pb-lg-4 pb-4 text-lg-start text-center">
+                <h2 class="pb-2 font-inter-title2">Descrição</h2>
+                <p class="font-inter text-box p-2">
+                  Com o PetHotel, seu animal de estimação pode desfrutar de um bom conforto,
+                  diversas opções de entretenimento e segurança que provemos.
+                </p>
+              </div>
+
+              <!-- Serviços -->
+              <div class="col-lg-6 col-12 pb-lg-4 pb-4">
+                <h2 class="pb-2 font-inter-title2 text-lg-end text-center">Serviços e Ofertas</h2>
+                <p class="font-inter text-box p-2 text-lg-start text-center">
+                  Possuímos diversos serviços como:<br>
+                    Hospedagens<br>
+                    Alimentação<br>
+                    Banho<br>
+                    Lazer
+                </p>
+              </div>
+
+              <!-- Endereço e diária -->
+              <div class="col-12">
+                <h2 class="pb-2 font-inter-title2 text-center">Localização, diária e meios de contato</h2>
+                
+                <!-- Localização -->
+                <p class="p-2 font-inter decoration-box text-center">Endereço: Rua N°15, Bairro A, N°16</p>
+                
+                <!-- Diária -->
+                <p class="p-2 font-inter decoration-box text-center">Diária: R$ 49,90</p>
+              </div>
+
+              <!-- Meios de contato -->
+              <div class="col-12 pb-4">
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <p class="p-2 font-inter decoration-box text-center">Email: pethotel@gmail.com</p>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <p class="p-2 font-inter decoration-box text-center">Número: (92) 99 881-1010</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Opções -->
+              <div class="col-1"></div>
+              <div class="col-10 pb-4">
+                <h2 class="pb-2 font-inter-title2 text-center">Opções</h2>
+                <div class="d-flex flex-lg-row flex-column gap-3 align-items-center justify-content-center decoration-box p-2">
+                  <a type="button" class="btn btn-dark bottom-button font-inter" href="#">
+                    <img src="assets/img/RatingIcon.svg" alt="RatingIcon">
+                    Avaliações
+                  </a>
+                  <a type="button" class="btn btn-dark bottom-button font-inter disabled" href="#">
+                    <img src="assets/img/FavoriteIcon.svg" alt="FavoriteIcon">
+                    Favoritar
+                  </a>
+                  <a type="button" class="btn btn-dark bottom-button font-inter disabled" href="#">
+                    <img src="assets/img/ChatIcon.svg" alt="ChatIcon">
+                    Chat
+                  </a>
+                  <a type="button" class="btn btn-dark bottom-button font-inter disabled" href="#">
+                    <img src="assets/img/SaveContactIcon.svg" alt="SaveContactIcon">
+                    Salvar
+                  </a>
+                </div>
+              </div>
+              <div class="col-1"></div>
+            </div>
+          </div>
+
+          <!-- Coluna de espaçamento -->
+          <div class="col-1"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="container-fluid py-3">
+      <div class="row">
+        <!-- Logomarca e link para voltar ao início -->
+        <div class="col-12 text-center pb-3">
+          <a class="navbar-brand" href="#">
+            <img
+              class="logo-footer"
+              src="assets/img/NPHLogoWeb.svg"
+              alt="Logomarca"
+            />
+          </a>
+        </div>
+
+        <!-- Direitos autorais -->
+        <div class="col-12 text-center">
+          <p class="font-inter-footer">© 2024 NortePet Hospedagens by Northbridge - Hospedagens para seu pet</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script JS Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

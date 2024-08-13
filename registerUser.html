@@ -1,0 +1,277 @@
+<!--
+Esta é a tela de cadastro de usuário, onde ele preencherá diversas campos do formulário
+para criar uma conta
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/screens/baseScreenStyles.css" />
+    <link rel="stylesheet" href="assets/css/screens/registerUser.css" />
+    <title>Cadastre-se - NortePet Hospedagens</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="sticky-top">
+      <div style="background-color: #904500" class="container-fluid">
+        <div class="container mw-100">
+          <!-- Barra de navegação -->
+          <nav class="navbar navbar-expand-lg">
+            <!-- Botão voltar -->
+            <div class="col-lg-4 col-6">
+              <a
+                type="button"
+                class="btn btn-dark normal-button font-inter"
+                href="#"
+              >
+                <img src="assets/img/Return.svg" alt="IconReturn" />
+                Voltar
+              </a>
+            </div>
+
+            <!-- Logomarca e link para voltar ao início -->
+            <div
+              class="col-lg-4 col-6 pt-lg-0 pt-2 d-flex justify-content-lg-center justify-content-end"
+            >
+              <a class="navbar-brand m-0" href="#">
+                <img
+                  class="logo"
+                  src="assets/img/NPHLogoWeb.svg"
+                  alt="Logomarca"
+                />
+              </a>
+            </div>
+
+            <!-- Coluna 3-->
+            <div class="col-lg-4 col-0"></div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Triângulo invertido SVG para a fenda do cabeçalho-->
+      <svg
+        class="header-bottom"
+        width="100%"
+        height="40px"
+        viewBox="0 0 20 10"
+        preserveAspectRatio="none"
+      >
+        <polygon points="10,10 20,0 0,0" style="fill: #904500" />
+      </svg>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+      <div class="container-fluid pt-4 pb-5">
+        <div class="row">
+          <p class="font-inter-title text-center">Cadastro de Usuário</p>
+          <div class="col-12">
+            <div class="row">
+              <!-- Coluna 1 -->
+              <div class="col-lg-2 col-0"></div>
+
+              <!-- Formulário -->
+              <div class="col-lg-8 col-12">
+                <form class="row">
+                  <!-- Campos de dados -->
+                  <div class="col-lg-5 col-12 pb-4">
+                    <p class="pb-4 font-inter-black text-center">
+                      Preencha os dados necessáros abaixo para fazer seu
+                      cadastro.
+                    </p>
+
+                    <!-- Nome -->
+                    <div class="mb-3 form-floating">
+                      <input
+                        type="text"
+                        name="nome"
+                        class="form-control"
+                        id="nome"
+                      />
+                      <label for="nome" class="form-label font-inter-black"
+                        >Nome</label
+                      >
+                    </div>
+                    <!-- Sobrenome -->
+                    <div class="mb-3 form-floating">
+                      <input
+                        type="text"
+                        name="sobrenome"
+                        class="form-control"
+                        id="sobrenome"
+                      />
+                      <label for="sobrenome" class="form-label font-inter-black"
+                        >Sobrenome</label
+                      >
+                    </div>
+                    <!-- Endereço -->
+                    <div class="mb-3 form-floating">
+                      <input
+                        type="text"
+                        name="endereco"
+                        class="form-control"
+                        id="endereco"
+                      />
+                      <label for="endereco" class="form-label font-inter-black"
+                        >Endereço</label
+                      >
+                    </div>
+                    <!-- CPF -->
+                    <div class="mb-3 form-floating">
+                      <input
+                        type="number"
+                        name="cpf"
+                        class="form-control"
+                        id="cpf"
+                      />
+                      <label for="cpf" class="form-label font-inter-black"
+                        >CPF</label
+                      >
+                    </div>
+                    <!-- Número de celular -->
+                    <div class="mb-3 form-floating">
+                      <input
+                        type="tel"
+                        name="celular"
+                        class="form-control"
+                        id="celular"
+                      />
+                      <label for="celular" class="form-label font-inter-black"
+                        >Número de Celular</label
+                      >
+                    </div>
+                    <!-- Email -->
+                    <div class="mb-3 form-floating">
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        id="email"
+                      />
+                      <label for="email" class="form-label font-inter-black">
+                        E-mail
+                      </label>
+                    </div>
+                    <!-- Senha -->
+                    <div class="mb-3 form-floating">
+                      <input
+                        type="password"
+                        name="senha"
+                        class="form-control"
+                        id="senha"
+                      />
+                      <label for="senha" class="form-label font-inter-black">
+                        Senha
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-2"></div>
+
+                  <!-- Escolha de imagem de perfil -->
+                  <div class="col-lg-5 col-12 pb-lg-0 pb-4">
+                    <div class="row">
+                      <p class="pb-4 font-inter-black text-center">
+                        Escolha uma imagem de perfil de seu gosto!
+                      </p>
+
+                      <!-- Imagem de perfil -->
+                      <div class="pb-4 d-flex justify-content-center">
+                        <img
+                          class="user-prof-icon mt-3"
+                          src="assets/img/UserIconImage.png"
+                          alt="UserProfileIcon"
+                          height="300rem"
+                        />
+                      </div>
+
+                      <!-- Botão de escolha de imagem de perfil -->
+                      <div class="d-flex justify-content-center">
+                        <!-- Input de Arquivo Oculto -->
+                        <input
+                          type="file"
+                          id="fileInput"
+                          style="display: none"
+                          name="imagemPerfil"
+                          onchange="handleFileChange(event)"
+                        />
+
+                        <!-- Botão -->
+                        <button
+                          type="button"
+                          class="btn btn-dark normal-button font-inter"
+                          onclick="document.getElementById('fileInput').click();"
+                        >
+                          Escolher imagem
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Botão de cadastramento -->
+                  <div class="col-12 d-flex justify-content-center">
+                    <button
+                      type="submit"
+                      class="btn btn-dark normal-button font-inter"
+                    >
+                      Cadastre-se
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Coluna 3 -->
+              <div class="col-lg-2 col-0"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="container-fluid py-3">
+      <div class="row">
+        <!-- Logomarca e link para voltar ao início -->
+        <div class="col-12 text-center pb-3">
+          <a class="navbar-brand" href="#">
+            <img
+              class="logo-footer"
+              src="assets/img/NPHLogoWeb.svg"
+              alt="Logomarca"
+            />
+          </a>
+        </div>
+
+        <!-- Direitos autorais -->
+        <div class="col-12 text-center">
+          <p class="font-inter-footer">
+            © 2024 NortePet Hospedagens by Northbridge - Hospedagens para seu
+            pet
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script JS Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Script de seleção de imagem de perfil -->
+    <script>
+      function handleFileChange(event) {
+        const file = event.target.files[0];
+        if (file) {
+          alert(`Arquivo selecionado: ${file.name}`);
+        }
+      }
+    </script>
+  </body>
+</html>

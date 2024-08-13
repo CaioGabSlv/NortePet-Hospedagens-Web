@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box; /*Calcular altura e largura dos elementos*/
+}
+
+html,
+body {
+  height: 100%; /*Altura 100% - total da tela*/
+}
+
+body {
+  color: #73879c;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  background: #d39c697e;
+  display: flex;
+  flex-direction: column; /*Direciona a organização do conteúdo de uma coluna | só funciona se tiver o display-flex*/
+}
+
+.conteudo {
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  margin: 50px auto;
+  background-color: #d08c4d;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.container img {
+  width: 70%; /*tamanho de largura*/
+}
+
+.container h2 {
+  color: #000000;
+  font-weight: 600;
+}
+.barra1 {
+  background-color: #904600ad;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 115px;
+}
+.barra2 {
+  background-color: #713700ba;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+}
+
+.barra3 {
+  background-color: #612e00;
+  position: fixed;
+  top: 5px;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+/* Estilo para o rodapé */
+footer {
+  background-color: #904500;
+  color: white;
+  padding: 10px 0; /* Ajuste o padding conforme necessário */
+  text-align: center;
+}
+
+/* Estilo para a borda marron */
+.brown-border {
+  background-color: #904500;
+  width: 100%; /* Largura do rodapé ocupando 100% do viewport */
+  height: 30px;
+  max-width: 1920px; /* Largura máxima de 1920px */
+  margin: 0 auto; /* Centraliza a borda horizontalmente */
+}

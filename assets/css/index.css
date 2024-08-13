@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box; /*Calcular altura e largura dos elementos*/
+}
+
+html,
+body {
+  background: #d39c697e;
+  color: #000;
+}
+.barra1 {
+  background-color: #904600ad;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 115px;
+}
+.barra2 {
+  background-color: #713700ba;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+}
+
+.barra3 {
+  background-color: #612e00;
+  position: fixed;
+  top: 5px;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+.col-11 {
+  position: fixed;
+  padding-top: 100px;
+  left: 300px;
+  width: 30%;
+  top: 27px;
+}
+header img {
+  position: fixed;
+  padding-top: 25px;
+  left: 50px;
+  width: 10%;
+  top: 10px;
+}
+
+.col-11 {
+  position: fixed;
+  padding-top: 15px;
+  left: 1500px;
+  right: 10px;
+  margin-top: 5px;
+}
+.col-12 {
+  position: fixed;
+  padding-top: 47px;
+  left: 1370px;
+  margin-top: 0px;
+}
+.botao {
+  position: fixed;
+  background-color: #d39c69;
+  padding-top: 11px;
+  left: 1800px;
+  margin-top: 115px;
+}
+
+main h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 1px;
+}
+
+.nav-button {
+  background-color: #713600;
+  border-color: #713600;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.offcanvas-header {
+  background-color: #612e00;
+}
+
+.offcanvas-body {
+  background-color: #d39c69;
+}
+
+main img {
+  position: fixed;
+  padding-top: 10%;
+  left: 30%;
+  width: 45%;
+  top: 90px;
+}

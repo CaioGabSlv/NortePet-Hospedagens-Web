@@ -1,0 +1,28 @@
+/*Conjunto de estilos para as tela de cadastro*/
+
+header {
+  background-color: unset;
+  box-shadow: none;
+}
+
+/*Estilização para o fundo do cabeçalho (triângulo invertido svg)*/
+.header-bottom {
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.3));
+}
+
+.logo {
+  height: 5rem;
+}
+
+@media (width <= 992px) {
+  .logo {
+    height: 3rem;
+  }
+}
+
+.user-prof-icon {
+  border-radius: 100%;
+  border-width: 0.75rem;
+  border-color: #b27339;
+  border-style: solid;
+}

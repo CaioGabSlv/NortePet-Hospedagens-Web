@@ -1,0 +1,93 @@
+/*Conjunto de estilos para as telas de perfil de hotel*/
+
+/*Botões de opções*/
+.bottom-button {
+  width: 95%;
+  background-color: #713600;
+  border-color: #713600;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*Estrelas de avaliação*/
+.rating-star {
+  stroke: black;
+  fill: orange;
+}
+
+.rating-star-empty {
+  stroke: black;
+  fill: darkgrey;
+}
+
+.star-size1 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.star-size2 {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.star-size3 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.star-size4 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.star-size5 {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (width <= 992px) {
+  .star-size1 {
+    width: 2rem;
+    height: 2rem;
+  }
+  .star-size2 {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  .star-size3 {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .star-size4 {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  .star-size5 {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.carousel-frame {
+  border: 7.5px solid #904500;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*Caixas de texto*/
+.text-box {
+  background-color: #904500;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (width > 992px) {
+  .text-box {
+    min-height: 10rem;
+  }
+}
+
+/*Caixa para o nome do hotel e avaliação*/
+.decoration-box {
+  background-color: #904500;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}

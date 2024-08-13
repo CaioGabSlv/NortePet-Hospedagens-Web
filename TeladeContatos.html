@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-brc">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/Teladecontatos.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="icon" href="assets/img/NPH_Logo_Web.png" />
+    <title>Tela de contatos</title>
+  </head>
+  <style>
+    body {
+      background-color: #d39c69;
+      padding: -20px; /* Espaço ao redor do conteúdo */
+      margin: 0;
+    }
+    main {
+      margin-top: -20px; /* Espaço superior */
+      margin-bottom: 20px; /* Espaço inferior */
+    }
+    .brown-border {
+      background-color: brown;
+      width: 1920px;
+      height: 30px;
+      margin: 0 auto; /* Centraliza a borda horizontalmente */
+    }
+    footer {
+      background-color: #904500; /* Cor de fundo do rodapé */
+      color: white; /* Cor do texto do rodapé */
+      padding: 20px 0; /* Espaçamento interno do rodapé */
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      height: 30px;
+    }
+  </style>
+  <body>
+    <header class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <img
+              src="assets/img/NPH_Logo_Web.png"
+              alt="logomarca"
+              width="243px"
+              height="91px"
+            />
+          </div>
+          <div class="col-6 text-start">
+            <nav class="navbar bg-body-black">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                      Menu
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body ">
+                  
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html"
+                        >Inicio</a
+                        >
+                      </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Hotéis</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="TeladeContatos.html">Contatos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="TeladeFavoritos.html">Favoritos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Meu perfil</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Ajuda</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container-fluid bg-destaque text-white pt-5 pb-5">
+        <!--Aplicando espaçamento no container e row para ajustar a seção em relação ao cabeçalho fixo-->
+        <div class="container pt-5">
+          <div class="row pt-4">
+            <div class="col-12 d-flex justify-content-center">
+              <h1 class="pb-3">
+                <img src="assets/img/CONTATOS.png" alt="" />
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- lista de contatos -->
+      <section class="container pt-5">
+        <div class="row">
+          <div class="col-6 text-center">
+            <img src="assets/img/ContactList.png" alt="" />
+      </section>
+    </main>
+
+    <footer></footer>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

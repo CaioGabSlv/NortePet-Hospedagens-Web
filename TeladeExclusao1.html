@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Chamando estilizações do css / bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Chamando estilização do css / css -->
+    <link rel="stylesheet" href="assets/css/TeladeExclusao1.css" />
+    <link rel="icon" href="assets/img/NPH_Logo_Web.png" />
+    <title>TeladeExclusão</title>
+  </head>
+  <body>
+    <!-- cabeçalho -->
+    <div class="barra1"></div>
+    <div class="barra2"></div>
+    <div
+      class="barra3 container2 d-flex justify-content-between align-items-center"
+    >
+      <a href="index.html"> <img src="assets/img/NPH_Logo_Web.png" alt="" /></a>
+      <a href="TeladePerfil(usuariocomum).html">
+      <button
+        type="submit"
+        class="btn btn-primary btn-bd-primary"
+        style="background-color: #713600; border-color: #713600"
+        onclick="window.history.back()"
+      >
+        Voltar
+      </button>
+      </a>
+    </div>
+    <header class="col-12 text-center mb-5 header1"></header>
+
+    <!-- conteudo principal -->
+    <main class="container-fluid conteudo">
+      <section class="container">
+        <div class="row">
+          <!-- Logomarca -->
+
+          <!-- Título e Subtítulo -->
+          <div class="col-12 text-center mb-4">
+            <h2>
+              <img src="assets/img/ResetPasswordLabel.png" alt="" />
+            </h2>
+          </div>
+        </div>
+
+        <!-- Formulário de login -->
+        <div class="row g-1" action="" method="post">
+          <p>
+            Digite sua senha atual e o código enviado ao seu email para excluir
+            sua conta.
+          </p>
+          <!-- Codigo-->
+          <div class="col-12 col-lg-12 mt-2">
+            <p>Código</p>
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder=""
+              name="email"
+            />
+          </div>
+
+          <!-- Senha -->
+          <div class="col-12 col-lg-12 mt-2">
+            <p>Senha</p>
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder=""
+              name="senha"
+            />
+          </div>
+
+          <div class="col-12 col-lg-12 mt-2">
+            <p>Confirmar senha</p>
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder=""
+              name="senha"
+            />
+          </div>
+          <a href="TeladeExclusao2.html">
+          <div class="row justify-content-center mt-5">
+            <div class="col-12 text-center">
+              <button class="btn btn-danger"
+                >Excluir conta</
+              >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

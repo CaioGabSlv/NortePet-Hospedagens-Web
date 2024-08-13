@@ -1,0 +1,119 @@
+/*Conjunto de estilos para navbar, cabeçalho e rodapé utilizado como estilo base de telas*/
+
+header {
+  background-color: #904500;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background-color: #d39c69;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #904500;
+  margin-top: auto;
+}
+
+/*Logomarca da barra de navegação/navbar*/
+.logo {
+  max-width: 100%;
+  height: 3.5rem;
+}
+
+.logo-footer {
+  max-width: 100%;
+  height: 3rem;
+}
+
+/*Botões da navbar*/
+.normal-button {
+  background-color: #713600;
+  border-color: #713600;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*Botões da navbar*/
+.nav-button {
+  width: 7.5rem;
+  background-color: #713600;
+  border-color: #713600;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*Caso a largura da tela seja igual ou menor que 992px ou lg (ex.: resolução de um tablet)*/
+/*Aumentar o tamanho dos botões da navbar para encaixá-los no offcanvas*/
+@media (width <= 992px) {
+  .nav-button {
+    width: 15rem;
+  }
+}
+
+/*Corpo do offcanvas*/
+.offcanvas-body {
+  background-color: #904500;
+}
+
+/*Fonte geral*/
+.font-inter {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: medium;
+  font-variation-settings: "slnt" 0;
+  text-decoration: none;
+}
+
+.font-inter-black {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: medium;
+  font-variation-settings: "slnt" 0;
+  text-decoration: none;
+  color: black;
+}
+
+.font-inter-title {
+  font-family: "Inter", sans-serif;
+  color: black;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: xx-large;
+  font-variation-settings: "slnt" 0;
+}
+
+.font-inter-title2 {
+  font-family: "Inter", sans-serif;
+  color: black;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: x-large;
+  font-variation-settings: "slnt" 0;
+}
+
+.font-inter-footer {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: 1rem;
+  font-size: small;
+  font-variation-settings: "slnt" 0;
+}
+
+/*Ícone do usuário (logado)*/
+.user-icon {
+  border-style: solid;
+  border-radius: 100%;
+  border-width: 5px;
+  border-color: #b27339;
+}

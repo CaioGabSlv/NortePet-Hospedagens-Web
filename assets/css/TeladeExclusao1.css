@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box; /*Calcular altura e largura dos elementos*/
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.btn-bd-primary {
+  background-color: #713600;
+  color: #fff;
+}
+
+body {
+  color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  background: #d39c697e;
+  display: flex;
+  flex-direction: column; /*Direciona a organização do conteúdo em coluna*/
+}
+
+.conteudo {
+  flex: 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 460px;
+  margin: 30px auto;
+  background-color: #d39c69;
+  padding: 100px;
+  border-radius: 20px;
+}
+
+.container2 img {
+  position: relative;
+  padding-top: 10px;
+  max-width: 100%;
+  top: 5%;
+  left: 10px;
+  height: 100px;
+}
+
+.container h2 {
+  color: #000;
+  font-weight: 900;
+  font-size: 90%;
+  flex-direction: column;
+}
+.barra1 {
+  background-color: #904500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 115px;
+}
+.barra2 {
+  background-color: #713600;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+}
+
+.barra3 {
+  background-color: #612e00;
+  position: fixed;
+  top: 5px;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+form img {
+  position: static;
+  padding-top: 5px;
+  left: 10px;
+  max-width: 10%;
+  height: 170px;
+  top: 10px;
+}
+
+footer {
+  color: #000820 font-weight 800;
+}
