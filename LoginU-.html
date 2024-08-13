@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/Teladeredefinicao1.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
     <link rel="icon" href="assets/img/NPH_Logo_Web.png" />
-    <title>Redefinição de Senha</title>
+    <title>Login</title>
   </head>
   <body>
      <!-- Cabeçalho Marron -->
@@ -30,9 +30,10 @@
         <div class="row ">
     <!-- Cabeçalho -->
     <header class="container2" class="col-12 text-center mb-5  ">
-    <h2>Redefinir Senha
+    <h2>
+      Olá! Aqui você pode entrar em sua conta de usuário, fazer seu
+      cadastro e recuperar sua senha.
     </h2>
-    <p>Digite sua senha atual e a nova senha para redefini-la.</p>
 </header>
 
    
@@ -45,7 +46,8 @@
         </div>
 
         <!-- Formulário de login -->
-       
+        <form class="row g-1" action="" method="post">
+          <img src="assets/img/UserIcon.png">
           <!-- Email -->
           <div class="col-12  col-lg-12  mt-2 div1 img">
             <p>Email</p>
@@ -53,7 +55,7 @@
               type="email"
               class="form-control"
               id="floatingInput"
-              placeholder="Digite seu email"
+              placeholder=""
               name="email"
             />
           
@@ -62,56 +64,68 @@
 
           <!-- Senha -->
           <div class="col-12  col-lg-12  mt-2">
-            <p>Senha atual</p>
+            <p>Senha</p>
             <input
               type="password"
               class="form-control"
               id="floatingPassword"
-              placeholder="Digite sua senha atual"
+              placeholder=""
               name="senha"
             />
  
           </div>
 
-             <!-- Nova Senha -->
-             <div class="col-12  col-lg-12  mt-2">
-              <p>Nova senha</p>
-              <input
-                type="password"
-                class="form-control"
-                id="floatingPassword"
-                placeholder="Digite a nova senha"
-                name="senha"
-              />
-
-              
-             <!-- Confirmar Senha -->
-             <div class="col-12  col-lg-12  mt-2">
-              <p>Confirmar senha</p>
-              <input
-                type="password"
-                class="form-control"
-                id="floatingPassword"
-                placeholder="Confirme a nova senha"
-                name="senha"
-              />
-
           <!-- Botão de login -->
       
           <div class="col-12 mt-3 mb-3 text-center">
             <button type="submit" class="btn btn-primary btn-bd-primary" style="background-color: #713600; border-color: #713600;">
-              Confirmar
+              Login
          </button>
         </div>
        
           </form>
         </form>
 
+        <!-- Links de recuperação de senha e cadastro de usuário -->
+        <div class="row">
+          <div class="col-12 text-center mb-3 fw-bold">
+            <a href="Teladeredefinicao1.html">
+                <button type="submit" class="btn btn-primary btn-bd-primary" style="background-color: #713600; border-color: #713600;">
+            
+                    Esqueci minha senha
+                </button>
+            </a>
+          </div>
 
-       
+          <div class="col-12  mb-3 text-center">
+            <a href="registerUser.html">
+            <button  type="" class="btn btn-primary btn-bd-primary "style="background-color: #713600; border-color: #713600;">
+              Cadastrar-se 
+          
+            </button>
+          </a>
+
             
           
-  
+          
+          
+   
+              <div class="row ">
+                <div class=" container2 mt-5 col-12 text-center mb-3 ">
+               <h2> Este botão vai para a pagina de login e cadastro de hotéis. Caso
+                    seja um, aperte nele.</h2>  
+                  </div>
+                </div>
+              </div>
+         
+
+            <div class="col-12 mt-1 mb-5 text-center">
+              <a href="LoginHotel.html">
+              <button type="submit" class="btn btn-primary btn-bd-primary" style="background-color: #713600; border-color: #713600;">
+                Login e Cadastro de Hotel
+              </button>
+          </a>
+          </div>
         </div>
       </section>
     </main>
@@ -143,3 +157,4 @@
    <script src="assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+

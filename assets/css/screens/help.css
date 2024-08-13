@@ -1,1 +1,33 @@
 /*Conjunto de estilos para as telas de ajuda/informação*/
+
+/*Degradê para o fundo*/
+body {
+  color: unset;
+  background-image: linear-gradient(to right, #d39c69, #d39c69, #aa6627);
+}
+
+/*Estilização para as imagens da segunda coluna*/
+.list-img {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-style: solid;
+  border-radius: 0.75rem;
+  border-color: #612e00;
+  border-width: 0.4rem;
+}
+
+.list-img-left {
+  margin-left: 12rem;
+}
+
+.list-img-right {
+  margin-right: 12rem;
+}
+
+@media (width <= 992px) {
+  .list-img-left {
+    margin-left: 0;
+  }
+  .list-img-right {
+    margin-right: 0;
+  }
+}

@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="icon" href="assets/img/NPH_Logo_Web.png" />
+    <link rel="stylesheet" href="assets/css/recomendados.css" />
     <title>Recomendados</title>
-    <link rel="stylesheet" href="recomendados.css" />
   </head>
 
   <body>
@@ -13,24 +15,23 @@
 
       <!-- botao -->
 
-      <div ontouchstart="">
-        <div class="button">
-          <a href="#">Cadastro</a>
-        </div>
+      <div class="col-12 ">
+        <a href="registerUser.html">
+          <button type="button" class="btn btn-dark nav-button ">Cadastro</button>
+    
       </div>
 
-      <div ontouchstart="">
-        <div class="button">
-          <a href="#">Login</a>
-        </div>
-      </div>
+      <div class="col-12 ">
+        <a href="LoginU-.html">
+          <button type="button" class="btn btn-dark nav-button">Login</button>
+     </div>
     </header>
 
     <div class="container">
       <div class="hotel-list">
         <!-- Hotel 1 -->
         <div class="hotel-card">
-          <img src="img/holidayPet.png" alt="Hotel 1" />
+          <img src="assets/img/holidayPet.png" alt="Hotel 1" />
           <div class="content">
             <a href="https://linkme.bio/holidaypet">
               Holiday Pet Hotel & Creche
@@ -54,7 +55,7 @@
 
         <!-- Hotel 2 -->
         <div class="hotel-card">
-          <img src="img/dog92.jpg" alt="Hotel 2" />
+          <img src="assets/img/dog92.jpg" alt="Hotel 2" />
           <div class="content">
             <a href="https://dog92.com.br/"> Dog92 Pet Shop Creche e Hotel</a>
             <p>
@@ -76,7 +77,7 @@
 
         <!-- Hotel 3 -->
         <div class="hotel-card">
-          <img src="img/puppyloPet.jpg" alt="Hotel 3" />
+          <img src="assets/img/puppyloPet.jpg" alt="Hotel 3" />
           <div class="content">
             <a href="https://linktr.ee/puppylo"> Puppylo - Creche e Hotel </a>
             <p>
@@ -96,7 +97,7 @@
         <!-- Hotel 4 -->
 
         <div class="hotel-card">
-          <img src="img/doghaus.jpg" alt="Hotel 3" />
+          <img src="assets/img/puppyloPet.jpg" alt="Hotel 3" />
           <div class="content">
             <a
               href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5592984739529&e=AT2fxJDKFU-8WyWZuM11vYgsaZYYIj5sGwYrx3wYzDscZuxV-V0gjdD6kQipYXwSvWdWuJP38aJWQ8Gi5xnJu83UwZy0rWJajT8XcmnhQ_nicmz9"
@@ -119,7 +120,7 @@
         <!-- Hotel 5 -->
 
         <div class="hotel-card">
-          <img src="img/DOGinn.jpeg" alt="Hotel 3" />
+          <img src="assets/img/DOGinn.jpeg" alt="Hotel 3" />
           <div class="content">
             <a href="https://linktr.ee/sweetpethotel">Sweet PET Hote </a>
             <p>
@@ -139,7 +140,7 @@
         <!-- Hotel 6 -->
 
         <div class="hotel-card">
-          <img src="img/doginn.jpg" alt="Hotel 3" />
+          <img src="assets/img/doginn.jpg" alt="Hotel 3" />
           <div class="content">
             <a
               href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5592991274308%2F&e=AT2dADGumFBclfFHEpNu4q_pah6ekMi3IAd4NGg0fpSuuOyMT5GAWOYlHAQN4iBmk8ZCSkuljJ2jgyNVYzlhANKnm_2yo5erKf-8Qkhv-z7s7u3h"
@@ -161,10 +162,33 @@
         </div>
       </div>
     </div>
-    <footer>
-      <p>
-        &copy; 2024 Lista de Hotéis Recomendados. Todos os direitos reservados.
-      </p>
+ 
+    
+    <!-- Rodapé -->
+    <footer class="container-fluid py-3">
+      <div class="row">
+        <!-- Logomarca e link para voltar ao início -->
+        <div class="col-12 text-center pb-3">
+          <a class="navbar-brand" href="#">
+            <img
+              class="logo-footer"
+              src="assets/img/NPHLogoWeb.svg"
+              alt="Logomarca"
+            />
+          </a>
+        </div>
+
+        <!-- Direitos autorais -->
+        <div class="col-12 text-center">
+          <p class="font-inter-footer">
+            © 2024 NortePet Hospedagens by Northbridge - Hospedagens para seu
+            pet
+          </p>
+        </div>
+      </div>
     </footer>
+
+    <!-- Script JS Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>

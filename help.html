@@ -3,16 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/screens/baseScreenStyles.css" />
+    <link rel="stylesheet" href="assets/css/screens/help.css" />
     <title>Sobre - NortePet Hospedagens</title>
   </head>
   <body>
     <!--Cabeçalho-->
-    <header></header>
+    <header class="sticky-top">
+      <div class="container-fluid">
+        <div class="container mw-100">
+          <!-- Barra de navegação -->
+          <nav class="navbar navbar-expand-lg">
+            <!-- Logomarca -->
+            <img
+              class="logo"
+              src="assets/img/NPHLogoWeb.svg"
+              alt="Logomarca"
+            />
+
+            <!-- Offcanvas -->
+            <div
+              class="offcanvas offcanvas-end offcanvas-body"
+              tabindex="-1"
+              id="navbarOffcanvasLg"
+              aria-labelledby="navbarOffcanvasLgLabel"
+            >
+              <!-- Botão fechar o menu offcanvas -->
+              <div class="offcanvas-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- Botões de navegação da navbar e offcanvas -->
+              <div class="d-flex flex-lg-row flex-column align-items-center gap-3">
+                <a type="button" class="btn btn-dark nav-button font-inter" href="#">
+                  <img src="assets/img/Login.svg" alt="IconLogin">
+                  Entrar
+                </a>
+                <a type="button" class="btn btn-dark nav-button font-inter" href="#">
+                  <img src="assets/img/Hotel.svg" alt="IconHotel">
+                  Hotéis
+                </a>
+                <a type="button" class="btn btn-dark nav-button font-inter disabled" aria-pressed="true" href="#">
+                  <img src="assets/img/Help.svg" alt="IconHelp">
+                  Ajuda
+                </a>
+                <a type="button" class="btn btn-dark nav-button font-inter" href="#">
+                  <img src="assets/img/Return.svg" alt="IconReturn">
+                  Voltar
+                </a>
+              </div>
+              </button>
+            </div>
+            
+            <!-- Botão abrir o menu offcanvas-->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarOffcanvasLg"
+              aria-controls="navbarOffcanvasLg"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
 
     <!--Conteúdo Principal-->
-    <main></main>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <!--Coluna de texto-->
+          <div class="px-4 pt-5 pb-lg-0 pb-4 col-lg-7 col-12">
+            <div class="ps-lg-5">
+              <!--Título-->
+              <h1 class="pb-3 font-inter-title text-lg-start text-center">O que é a NortePet Hospedagens?</h1>
+              
+              <!--Texto principal-->
+              <p class="mb-2 font-inter-black">
+                A NortePet Hospedagens é uma plataforma que tem o objetivo de reunir vários hotéis em um só local.
+                Assim, promovendo acessibilidade a clientes e mais visibilidade para os hotéis.
+                <br>
+                <br>
+                A platforma possui diversas ferramentas, como:
+              </p>
+
+              <!--Lista não-ordenada de características-->
+              <ul class="font-inter-black">
+                <li>Sistema de login e cadastro de usuários e hotéis;</li>
+                <li>Sistema de busca de hotéis com filtros;</li>
+                <li>Lista de registro de hotéis visitados e favoritos</li>
+                <li>Formas de contato com hotéis;</li>
+                <li>Sistema de chat com atendente;</li>
+                <li>Sistema de avaliação de hotéis.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--Colune de imagens-->
+          <div class="col-lg-5 col-12">
+            <div class="pt-lg-4 pt-lg-1 pb-5 px-5">
+              <div class="p-3 d-flex flex-column align-items-center gap-3">
+                <!--Imagem 1-->
+                <img class="list-img list-img-left" src="assets/img/HelpImage1.jpg" width="230rem" height="130rem" alt="Imagem 1">
+                
+                <!--Imagem 2-->
+                <img class="list-img list-img-right" src="assets/img/HelpImage2.jpg" width="230rem" height="130rem" alt="Imagem 2">
+                
+                <!--Imagem 3-->
+                <img class="list-img list-img-left" src="assets/img/HelpImage3.jpg" width="230rem" height="130rem" alt="Imagem 3">
+                
+                <!--Imagem 4-->
+                <img class="list-img  list-img-right" src="assets/img/HelpImage4.jpg" width="230rem" height="130rem" alt="Imagem 4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!--Rodapé-->
-    <footer></footer>
+    <footer class="container-fluid py-3">
+      <div class="row">
+        <!-- Logomarca e link para voltar ao início -->
+        <div class="col-12 text-center pb-3">
+          <a class="navbar-brand" href="#">
+            <img
+              class="logo-footer"
+              src="assets/img/NPHLogoWeb.svg"
+              alt="Logomarca"
+            />
+          </a>
+        </div>
+
+        <!-- Direitos autorais -->
+        <div class="col-12 text-center">
+          <p class="font-inter-footer">© 2024 NortePet Hospedagens by Northbridge - Hospedagens para seu pet</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--Script JS Bootstrap-->
+    <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>

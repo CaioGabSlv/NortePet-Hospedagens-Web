@@ -99,7 +99,7 @@
           </div>
 
           <div class="col-12  mb-3 text-center">
-            <a href="CadastroNP.html">
+            <a href="registerUser.html">
             <button  type="" class="btn btn-primary btn-bd-primary "style="background-color: #713600; border-color: #713600;">
               Cadastrar-se 
           
